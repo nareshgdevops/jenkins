@@ -1,2 +1,2 @@
 default:
-	ansible-palybook jenkins.yml
+	 ansible-playbook jenkins.yml
