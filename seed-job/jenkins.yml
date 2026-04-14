@@ -5,7 +5,4 @@
     - seed-job
   vars:
     jobs:
-      - { name: sample1, repo_name: learn-jenkins}
-      - { name: sample2, repo_name: learn-jenkins }
-      - { name: sample3, repo_name: learn-jenkins }
-      - { name: sample4, repo_name: learn-jenkins }
+      - { name: sample, repo_name: learn-jenkins}
