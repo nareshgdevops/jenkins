@@ -6,7 +6,7 @@
         <EnvInjectJobProperty>
             <info>
                 <propertiesContent>APP_TYPE={{ item.appType }}</propertiesContent>
-                <propertiesContent>APP_TYPE={{ item.appName }}</propertiesContent>
+                <propertiesContent>APP_TYPE={{ item.name }}</propertiesContent>
             </info>
         </EnvInjectJobProperty>
     </properties>
