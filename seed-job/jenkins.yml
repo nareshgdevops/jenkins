@@ -5,6 +5,11 @@
     - seed-job
   vars:
     folder:
-      - { name: CI}
+      - { name: CI }
     jobs:
-      - { name: cart, repo_name: roboshop-cart}
+      - { name: cart, repo_name: roboshop-cart }
+      - { name: user, repo_name: roboshop-user }
+      - { name: catalogue, repo_name: roboshop-catalogue }
+      - { name: payment, repo_name: roboshop-payment }
+      - { name: shipping, repo_name: roboshop-shipping }
+      - { name: frontend, repo_name: roboshop-frontend }
