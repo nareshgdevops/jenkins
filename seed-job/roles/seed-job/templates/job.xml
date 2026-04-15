@@ -3,14 +3,21 @@
     <description></description>
     <keepDependencies>false</keepDependencies>
     <properties>
-        <EnvInjectJobProperty plugin="envinject@2.9.0">
-            <info>
-                <propertiesContent>
-                    APP_TYPE={{ item.appType }}
-                    APP_NAME={{ item.name }}
-                </propertiesContent>
-            </info>
-        </EnvInjectJobProperty>
+        <hudson.model.ParametersDefinitionProperty>
+            <parameterDefinitions>
+
+                <hudson.model.StringParameterDefinition>
+                    <name>APP_TYPE</name>
+                    <defaultValue>{{ item.appType }}</defaultValue>
+                </hudson.model.StringParameterDefinition>
+
+                <hudson.model.StringParameterDefinition>
+                    <name>APP_NAME</name>
+                    <defaultValue>{{ item.name }}</defaultValue>
+                </hudson.model.StringParameterDefinition>
+
+            </parameterDefinitions>
+        </hudson.model.ParametersDefinitionProperty>
     </properties>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@4275.vb_0565eb_a_3d36">
         <scm class="hudson.plugins.git.GitSCM" plugin="git@5.10.1">
