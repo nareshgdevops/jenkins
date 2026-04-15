@@ -10,7 +10,7 @@
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
     config: "{{ lookup('template', 'templates/job.xml') }}"
-    name: "{{ folder.name }}/{{ item.name }}"
+    name: "{{ folder[0].name }}/{{ item.name }}"
     password: admin
     url: http://jenkins-int.nareshdevops1218.online:8080
     user: admin
