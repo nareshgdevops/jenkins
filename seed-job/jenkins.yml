@@ -4,5 +4,7 @@
   roles:
     - seed-job
   vars:
+    folder:
+      name: CI
     jobs:
-      - { name: sample, repo_name: learn-jenkins}
+      - { name: cart, repo_name: roboshop-cart}
