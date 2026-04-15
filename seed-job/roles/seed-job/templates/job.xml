@@ -2,7 +2,14 @@
 <flow-definition plugin="workflow-job@1571.vb_423c255d6d9">
     <description></description>
     <keepDependencies>false</keepDependencies>
-    <properties/>
+    <properties>
+        <EnvInjectJobProperty>
+            <info>
+                <propertiesContent>APP_TYPE={{ item.appType }}</propertiesContent>
+                <propertiesContent>APP_TYPE={{ item.appName }}</propertiesContent>
+            </info>
+        </EnvInjectJobProperty>
+    </properties>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@4275.vb_0565eb_a_3d36">
         <scm class="hudson.plugins.git.GitSCM" plugin="git@5.10.1">
             <configVersion>2</configVersion>

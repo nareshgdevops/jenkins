@@ -7,9 +7,9 @@
     folder:
       - { name: CI }
     jobs:
-      - { name: cart, repo_name: roboshop-cart }
-      - { name: user, repo_name: roboshop-user }
-      - { name: catalogue, repo_name: roboshop-catalogue }
-      - { name: payment, repo_name: roboshop-payment }
-      - { name: shipping, repo_name: roboshop-shipping }
-      - { name: frontend, repo_name: roboshop-frontend }
+      - { name: cart, repo_name: roboshop-cart, appType: nodejs }
+      - { name: user, repo_name: roboshop-user, appType: nodejs }
+      - { name: catalogue, repo_name: roboshop-catalogue, appType: nodejs }
+      - { name: payment, repo_name: roboshop-payment, appType: python }
+      - { name: shipping, repo_name: roboshop-shipping, appType: maven }
+      - { name: frontend, repo_name: roboshop-frontend, appType: angular }
